@@ -1,21 +1,24 @@
 {
-  "name": "tomato",
+  "name": "@tomatogame/tomato",
   "version": "1.0.0",
   "description": "",
   "main": "lib/tomato.js",
   "style": "lib/index.css",
   "files": [
     "lib",
-    "es"
+    "es",
+    "types"
   ],
   "scripts": {
+    "bootstrap": "yarn || npm i",
     "dev": "vant-cli dev",
     "test": "vant-cli test",
     "lint": "vant-cli lint",
     "build": "vant-cli build",
     "release": "vant-cli release",
-    "test:coverage": "open test/coverage/index.html",
-    "build-site": "vant-cli build-site && gh-pages -d site-dist"
+    "test:watch": "vant-cli test --watch",
+    "release:site": "sh docs/site/release.sh",
+    "test:coverage": "open test/coverage/index.html"
   },
   "author": "yanwenyao",
   "license": "MIT",
@@ -35,12 +38,26 @@
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },
+  "dependencies": {
+    "vant": "^2.12.44"
+  },
   "devDependencies": {
     "@vant/cli": "^2.11.5",
-    "babel-plugin-import": "^1.13.0",
+    "prettier": "^2.1.0",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },
+  "sideEffects": [
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.css",
+    "*.less"
+  ],
+  "vetur": {
+    "tags": "vetur/tags.json",
+    "attributes": "vetur/attributes.json"
+  },
+  "web-types": "vetur/web-types.json",
   "eslintConfig": {
     "root": true,
     "extends": [
@@ -53,19 +70,11 @@
     ]
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "proseWrap": "never"
   },
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 8"
-  ],
-  "sideEffects": [
-    "es/**/style/*",
-    "lib/**/style/*",
-    "*.css",
-    "*.less"
-  ],
-  "dependencies": {
-    "vant": "^2.12.44"
-  }
+  ]
 }

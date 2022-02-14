@@ -5,16 +5,13 @@ import { BORDER_SURROUND } from '../utils/constant';
 import { routeProps, RouteProps, functionalRoute } from '../utils/router';
 
 // Components
-import Vue from 'vue'
 import { Loading, Icon } from 'vant';
-export type LoadingType = 'circular' | 'spinner';
-Vue.use(Icon);
-Vue.use(Loading);
-
 // Types
 // Types
 import { CreateElement, RenderContext } from 'vue/types';
 import { ScopedSlot, DefaultSlots } from '../utils/types';
+
+export type LoadingType = 'circular' | 'spinner';
 
 export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 
@@ -141,9 +138,10 @@ function Button(
 
     if (icon) {
       return (
-        <Icon name={icon} 
-        // class={bem('icon')} 
-        // classPrefix={props.iconPrefix} 
+        <Icon
+          name={icon}
+          // class={bem('icon')}
+          // classPrefix={props.iconPrefix}
         />
       );
     }

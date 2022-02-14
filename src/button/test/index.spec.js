@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
-import DemoButton from '../../demo-button';
+import Button from '../../button';
 
-test('render demo button', () => {
-  const wrapper = mount(DemoButton);
+test('renderbutton', () => {
+  const wrapper = mount(Button);
   expect(wrapper).toMatchSnapshot();
 });

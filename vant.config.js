@@ -3,16 +3,10 @@ module.exports = {
   build: {
     css: {
       preprocessor: 'less',
-      configureVite(config) {
-        // 添加一个自定义插件
-        config.plugins.push(vitePluginXXX);
-        return config;
-      },
     },
     site: {
       publicPath: '/tomato/',
     },
-    
   },
   site: {
     title: 'tomato',
@@ -37,6 +31,10 @@ module.exports = {
           {
             path: 'button',
             title: 'Button 按钮',
+          },
+          {
+            path: 'overlay',
+            title: 'Overlay 按钮',
           },
         ],
       },
