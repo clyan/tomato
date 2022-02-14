@@ -42,6 +42,9 @@
     "vue-template-compiler": "^2.6.11",
     "vant": "^2.12.44"
   },
+  "dependencies": {
+    "vant": "^2.12.44"
+  },
   "devDependencies": {
     "@vant/cli": "^2.11.5",
     "prettier": "^2.1.0",
