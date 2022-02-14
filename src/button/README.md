@@ -8,7 +8,7 @@ Button 是一个示例按钮组件
 
 ```js
 import Vue from 'vue';
-import { Button } from 'tomato';
+import { Button } from '@tomatogame/tomato';
 
 Vue.use(Button);
 ```

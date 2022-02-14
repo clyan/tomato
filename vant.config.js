@@ -3,43 +3,56 @@ module.exports = {
   build: {
     css: {
       preprocessor: 'less',
-      configureVite(config) {
-        // 添加一个自定义插件
-        config.plugins.push(vitePluginXXX);
-        return config;
-      },
     },
     site: {
       publicPath: '/tomato/',
     },
-    
   },
   site: {
     title: 'tomato',
+    versions: [],
+    htmlPluginOptions: {
+      meta: {
+        'docsearch:version': 'v2',
+      },
+    },
     logo: 'https://img.yzcdn.cn/vant/logo.png',
-    nav: [
-      {
-        title: '开发指南',
-        items: [
+    defaultLang: 'zh-CN',
+    locales: {
+      'zh-CN': {
+        title: 'Tomato 2',
+        description: '轻量、可靠的移动端组件库',
+        logo: 'https://img01.yzcdn.cn/vant/logo.png',
+        langLabel: '中文',
+        nav: [
           {
-            path: 'home',
-            title: '介绍',
+            title: '开发指南',
+            items: [
+              {
+                path: 'home',
+                title: '介绍',
+              },
+              {
+                path: 'quickstart',
+                title: '快速上手',
+              },
+            ],
           },
           {
-            path: 'quickstart',
-            title: '快速上手',
+            title: '基础组件',
+            items: [
+              {
+                path: 'button',
+                title: 'Button 按钮',
+              },
+              {
+                path: 'overlay',
+                title: 'Overlay 按钮',
+              },
+            ],
           },
         ],
       },
-      {
-        title: '基础组件',
-        items: [
-          {
-            path: 'button',
-            title: 'Button 按钮',
-          },
-        ],
-      },
-    ],
+    },
   },
 };

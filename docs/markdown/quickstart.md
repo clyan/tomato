@@ -4,11 +4,11 @@
 
 ```bash
 # 通过 npm
-npm i tomato
+npm i @tomatogame/tomato
 
 # 通过 yarn
-yarn add tomato
+yarn add  @tomatogame/tomato
 
 # 通过 pnpm
-pnpm add tomato
+pnpm add @tomatogame/tomato
 ```

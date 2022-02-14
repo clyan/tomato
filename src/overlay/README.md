@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Overlay } from 'tomato';
+import { Overlay } from '@tomatogame/tomato';
 
 Vue.use(Overlay);
 ```

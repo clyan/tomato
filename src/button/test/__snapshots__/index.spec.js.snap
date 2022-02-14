@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render demo button 1`] = `<button class="demo-button"></button>`;
+exports[`renderbutton 1`] = `
+<button class="tomato-button tomato-button--default tomato-button--normal">
+  <div class="tomato-button__content"></div>
+</button>
+`;
