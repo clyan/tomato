@@ -1,0 +1,80 @@
+export default {
+  name: 'Navn',
+  tel: 'Telefon',
+  save: 'Lagre',
+  confirm: 'Bekreft',
+  cancel: 'Avbryt',
+  delete: 'Slett',
+  complete: 'Fullfør',
+  loading: 'Laster...',
+  telEmpty: 'Vennligst fyll inn telefonnummer',
+  nameEmpty: 'Vennligst fyll inn navn',
+  nameInvalid: 'Ugyldig navn',
+  confirmDelete: 'Er du sikker på at du vil slette?',
+  telInvalid: 'Ugyldig telefonnummer',
+  tomatoCalendar: {
+    end: 'Slutt',
+    start: 'Start',
+    title: 'Kalendar',
+    startEnd: 'Start/Slutt',
+    weekdays: ['Søn', 'Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør'],
+    monthTitle: (year: number, month: number) => `${year}/${month}`,
+    rangePrompt: (maxRange: number) => `Maks. ${maxRange} dager`,
+  },
+  tomatoCascader: {
+    select: 'Plukke ut',
+  },
+  tomatoContactCard: {
+    addText: 'Legg til kontakt info',
+  },
+  tomatoContactList: {
+    addText: 'Legg til ny kontakt',
+  },
+  tomatoPagination: {
+    prev: 'Forrige',
+    next: 'Neste',
+  },
+  tomatoPullRefresh: {
+    pulling: 'Dra for oppdatering...',
+    loosing: 'Mist for oppdatering...',
+  },
+  tomatoSubmitBar: {
+    label: 'Totalt：',
+  },
+  tomatoCoupon: {
+    unlimited: 'Uendelig',
+    discount: (discount: number) => `${discount * 10}% avslag`,
+    condition: (condition: number) => `Minst ${condition}`,
+  },
+  tomatoCouponCell: {
+    title: 'Kupong',
+    tips: 'Ingen kuponger',
+    count: (count: number) => `Du har ${count} kuponger`,
+  },
+  tomatoCouponList: {
+    empty: 'Ingen kuponger',
+    exchange: 'Bytte',
+    close: 'Lukk',
+    enable: 'Tilgjengelig',
+    disabled: 'Utilgjengelig',
+    placeholder: 'Kupong kode',
+  },
+  tomatoAddressEdit: {
+    area: 'Område',
+    postal: 'Postkode',
+    areaEmpty: 'Vennligst fyll inn område',
+    addressEmpty: 'Addresse kan ikke være tomt',
+    postalEmpty: 'Feil postkode',
+    defaultAddress: 'Sett som standard adresse',
+    telPlaceholder: 'Telefon',
+    namePlaceholder: 'Navn',
+    areaPlaceholder: 'Område',
+  },
+  tomatoAddressEditDetail: {
+    label: 'Adresse',
+    placeholder: 'Adresse',
+  },
+  tomatoAddressList: {
+    add: 'Legg til ny adresse',
+  },
+};

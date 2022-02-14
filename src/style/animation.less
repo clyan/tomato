@@ -1,0 +1,139 @@
+@import './var';
+
+@keyframes tomato-slide-up-enter {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes tomato-slide-up-leave {
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes tomato-slide-down-enter {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes tomato-slide-down-leave {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes tomato-slide-left-enter {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes tomato-slide-left-leave {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes tomato-slide-right-enter {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes tomato-slide-right-leave {
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes tomato-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes tomato-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes tomato-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tomato-fade {
+  &-enter-active {
+    animation: @animation-duration-base tomato-fade-in both
+      @animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: @animation-duration-base tomato-fade-out both
+      @animation-timing-function-leave;
+  }
+}
+
+.tomato-slide-up {
+  &-enter-active {
+    animation: tomato-slide-up-enter @animation-duration-base both
+      @animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: tomato-slide-up-leave @animation-duration-base both
+      @animation-timing-function-leave;
+  }
+}
+
+.tomato-slide-down {
+  &-enter-active {
+    animation: tomato-slide-down-enter @animation-duration-base both
+      @animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: tomato-slide-down-leave @animation-duration-base both
+      @animation-timing-function-leave;
+  }
+}
+
+.tomato-slide-left {
+  &-enter-active {
+    animation: tomato-slide-left-enter @animation-duration-base both
+      @animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: tomato-slide-left-leave @animation-duration-base both
+      @animation-timing-function-leave;
+  }
+}
+
+.tomato-slide-right {
+  &-enter-active {
+    animation: tomato-slide-right-enter @animation-duration-base both
+      @animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: tomato-slide-right-leave @animation-duration-base both
+      @animation-timing-function-leave;
+  }
+}

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div>
+  <div><button class="tomato-button tomato-button--primary tomato-button--normal" style="margin-left: 16px;">
+      <div class="tomato-button__content"><span class="tomato-button__text">显示遮罩层</span></div>
+    </button>
+    <div class="tomato-overlay" style="display: none;" name="tomato-fade"></div>
+  </div>
+  <div><button class="tomato-button tomato-button--primary tomato-button--normal" style="margin-left: 16px;">
+      <div class="tomato-button__content"><span class="tomato-button__text">嵌入内容</span></div>
+    </button>
+    <div class="tomato-overlay" style="display: none;" name="tomato-fade">
+      <div class="wrapper">
+        <div class="block"></div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

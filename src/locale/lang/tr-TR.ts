@@ -1,0 +1,80 @@
+export default {
+  name: 'İsim',
+  tel: 'Telefon',
+  save: 'Kaydet',
+  confirm: 'Onayla',
+  cancel: 'İptal',
+  delete: 'Sil',
+  complete: 'Tamamla',
+  loading: 'Yükleniyor...',
+  telEmpty: 'Lütfen tel. no giriniz',
+  nameEmpty: 'Lütfen isim giriniz',
+  nameInvalid: 'Geçersiz isim',
+  confirmDelete: 'Silmek istediğinize emin misiniz?',
+  telInvalid: 'Geçersiz tel. numarası',
+  tomatoCalendar: {
+    end: 'Son',
+    start: 'Başlat',
+    title: 'Takvim',
+    startEnd: 'Başlat/Son',
+    weekdays: ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'],
+    monthTitle: (year: number, month: number) => `${year}/${month}`,
+    rangePrompt: (maxRange: number) => `En fazla ${maxRange} gün seçin`,
+  },
+  tomatoCascader: {
+    select: 'Seçiniz',
+  },
+  tomatoContactCard: {
+    addText: 'Kişi bilgisi ekle',
+  },
+  tomatoContactList: {
+    addText: 'Yeni kişi ekle',
+  },
+  tomatoPagination: {
+    prev: 'Önceki',
+    next: 'Sonraki',
+  },
+  tomatoPullRefresh: {
+    pulling: 'Yenilemek için çekin...',
+    loosing: 'Yenilemek için bırakın...',
+  },
+  tomatoSubmitBar: {
+    label: 'Toplam:',
+  },
+  tomatoCoupon: {
+    unlimited: 'Sınırsız',
+    discount: (discount: number) => `%${discount * 10} indirim`,
+    condition: (condition: number) => `En az ${condition}`,
+  },
+  tomatoCouponCell: {
+    title: 'Kupon',
+    tips: 'Kupon yok',
+    count: (count: number) => `${count} adet teklif var`,
+  },
+  tomatoCouponList: {
+    empty: 'Kupon yok',
+    exchange: 'Takas',
+    close: 'Kapat',
+    enable: 'Mevcut',
+    disabled: 'Mevcut değil',
+    placeholder: 'Kupon kodu',
+  },
+  tomatoAddressEdit: {
+    area: 'Alan',
+    postal: 'Posta',
+    areaEmpty: 'Lütfen alıcı alanını seçin',
+    addressEmpty: 'Adres boş olamaz!',
+    postalEmpty: 'Yanlış posta kodu',
+    defaultAddress: 'Varsayılan adres olarak ayarla',
+    telPlaceholder: 'Telefone',
+    namePlaceholder: 'İsim',
+    areaPlaceholder: 'Alan',
+  },
+  tomatoAddressEditDetail: {
+    label: 'Adres',
+    placeholder: 'Adres',
+  },
+  tomatoAddressList: {
+    add: 'Yeni adres ekle',
+  },
+};

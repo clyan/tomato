@@ -1,0 +1,80 @@
+export default {
+  name: 'Nom',
+  tel: 'Telephone',
+  save: 'Sauvegarder',
+  confirm: 'Confirmer',
+  cancel: 'Annuler',
+  delete: 'Suprimer',
+  complete: 'Terminé',
+  loading: 'Chargement...',
+  telEmpty: 'Veuillez remplir le tel',
+  nameEmpty: 'Veuillez remplir le nom',
+  nameInvalid: 'Nom incorrect',
+  confirmDelete: 'Êtes-vous sûr de vouloir supprimer?',
+  telInvalid: 'Numéro de téléphone incorrect',
+  tomatoCalendar: {
+    end: 'Fin',
+    start: 'Début',
+    title: 'Calendrier',
+    startEnd: 'Début/Fin',
+    weekdays: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+    monthTitle: (year: number, month: number) => `${year}/${month}`,
+    rangePrompt: (maxRange: number) => `Choisir pas plus de ${maxRange} jours`,
+  },
+  tomatoCascader: {
+    select: 'Sélectionner',
+  },
+  tomatoContactCard: {
+    addText: 'Ajouter des informations de contact',
+  },
+  tomatoContactList: {
+    addText: 'Ajouter un nouveau contact',
+  },
+  tomatoPagination: {
+    prev: 'Précédent',
+    next: 'Suitomato',
+  },
+  tomatoPullRefresh: {
+    pulling: 'Tirer pour actualiser ...',
+    loosing: 'Relâchez pour actualiser...',
+  },
+  tomatoSubmitBar: {
+    label: 'Total：',
+  },
+  tomatoCoupon: {
+    unlimited: 'Illimité',
+    discount: (discount: number) => `${discount * 10}% de réduction`,
+    condition: (condition: number) => `Au moins ${condition}`,
+  },
+  tomatoCouponCell: {
+    title: 'Coupon',
+    tips: 'Pas de coupons',
+    count: (count: number) => `Vous avez ${count} coupons`,
+  },
+  tomatoCouponList: {
+    empty: 'Pas de coupons',
+    exchange: 'Exchange',
+    close: 'Fermer',
+    enable: 'Disponible',
+    disabled: 'Indisponible',
+    placeholder: 'Code coupon',
+  },
+  tomatoAddressEdit: {
+    area: 'Zone',
+    postal: 'Postal',
+    areaEmpty: 'Veuillez sélectionner une zone de réception',
+    addressEmpty: "L'adresse ne peut pas être vide",
+    postalEmpty: 'Mauvais code postal',
+    defaultAddress: 'Définir comme adresse par défaut',
+    telPlaceholder: 'Téléphone',
+    namePlaceholder: 'Nom',
+    areaPlaceholder: 'Zone',
+  },
+  tomatoAddressEditDetail: {
+    label: 'Adresse',
+    placeholder: 'Adresse',
+  },
+  tomatoAddressList: {
+    add: 'Ajouter une nouvelle adresse',
+  },
+};
