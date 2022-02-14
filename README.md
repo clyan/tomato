@@ -1,9 +1,7 @@
 <p align="center">
     <img alt="logo" src="https://img01.yzcdn.cn/vant/logo.png" width="120" style="margin-bottom: 10px;">
 </p>
-
 <h1 align="center">Tomato</h1>
-
 <p align="center">轻量、可靠的移动端 Vue 组件库</p>
 </p>
 ---
