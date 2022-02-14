@@ -25,11 +25,12 @@ import 'tomato/lib/index.css';
 
 Vue.use(Button);
 ```
+
 tomato 也支持按需引入、CDN 引入等方式，详细说明见
 
 ## 浏览器支持
 
-Vant 2 支持现代浏览器以及 Android >= 4.0、iOS >= 8.0。
+Tomato 2 支持现代浏览器以及 Android >= 4.0、iOS >= 8.0。
 
 ## 开源协议
 
