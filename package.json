@@ -1,6 +1,6 @@
 {
   "name": "@tomatogame/tomato",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.0",
   "description": "",
   "main": "lib/tomato.js",
   "style": "lib/index.css",
@@ -16,9 +16,9 @@
     "bootstrap": "yarn || npm i",
     "dev": "vant-cli dev",
     "test": "vant-cli test",
-    "lint": "vant-cli lint",
+    "lint": "vant-cli lint --preRelease=beta",
     "build": "vant-cli build",
-    "release": "vant-cli release",
+    "release": "vant-cli release --preRelease=beta",
     "test:watch": "vant-cli test --watch",
     "release:site": "sh docs/site/release.sh",
     "test:coverage": "open test/coverage/index.html"

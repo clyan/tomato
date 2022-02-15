@@ -1,31 +1,31 @@
 <template>
-    <demo-section>
-        <demo-block :title="t('basicUsage')">
-            <tomato-button
-                type="primary"
-                :text="t('showOverlay')"
-                style="margin-left: 16px;"
-                @click="show = true"
-            />
+  <demo-section>
+    <demo-block :title="t('basicUsage')">
+      <tomato-button
+        type="primary"
+        :text="t('showOverlay')"
+        style="margin-left: 16px"
+        @click="show = true"
+      />
 
-            <tomato-overlay :show="show" @click="show = false" />
-        </demo-block>
+      <tomato-overlay :show="show" @click="show = false" />
+    </demo-block>
 
-        <demo-block :title="t('embeddedContent')">
-            <tomato-button
-                type="primary"
-                :text="t('embeddedContent')"
-                style="margin-left: 16px;"
-                @click="showEmbedded = true"
-            />
+    <demo-block :title="t('embeddedContent')">
+      <tomato-button
+        type="primary"
+        :text="t('embeddedContent')"
+        style="margin-left: 16px"
+        @click="showEmbedded = true"
+      />
 
-            <tomato-overlay :show="showEmbedded" @click="showEmbedded = false">
-                <div class="wrapper">
-                    <div class="block" />
-                </div>
-            </tomato-overlay>
-        </demo-block>
-    </demo-section>
+      <tomato-overlay :show="showEmbedded" @click="showEmbedded = false">
+        <div class="wrapper">
+          <div class="block" />
+        </div>
+      </tomato-overlay>
+    </demo-block>
+  </demo-section>
 </template>
 
 <script>
@@ -51,22 +51,22 @@ export default {
 </script>
 
 <style lang="less">
-@import "../../style/var";
+@import '../../style/var';
 
 .demo-overlay {
-    background: @white;
+  background: @t-white;
 
-    .wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 
-    .block {
-        width: 120px;
-        height: 120px;
-        background-color: @white;
-    }
+  .block {
+    width: 120px;
+    height: 120px;
+    background-color: @t-white;
+  }
 }
 </style>

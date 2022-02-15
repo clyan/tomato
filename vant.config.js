@@ -47,7 +47,11 @@ module.exports = {
               },
               {
                 path: 'overlay',
-                title: 'Overlay 按钮',
+                title: 'Overlay 遮罩层',
+              },
+              {
+                path: 'turntable',
+                title: 'Turntable 转盘',
               },
             ],
           },

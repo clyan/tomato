@@ -1,901 +1,902 @@
 // Color Palette
-@black: #000;
-@white: #fff;
-@gray-1: #f7f8fa;
-@gray-2: #f2f3f5;
-@gray-3: #ebedf0;
-@gray-4: #dcdee0;
-@gray-5: #c8c9cc;
-@gray-6: #969799;
-@gray-7: #646566;
-@gray-8: #323233;
-@red: #ee0a24;
-@blue: #1989fa;
-@orange: #ff976a;
-@orange-dark: #ed6a0c;
-@orange-light: #fffbe8;
-@green: #07c160;
+@t-black: #000;
+@t-white: #fff;
+@t-gray-1: #f7f8fa;
+@t-gray-2: #f2f3f5;
+@t-gray-3: #ebedf0;
+@t-gray-4: #dcdee0;
+@t-gray-5: #c8c9cc;
+@t-gray-6: #969799;
+@t-gray-7: #646566;
+@t-gray-8: #323233;
+@t-red: #ee0a24;
+@t-blue: #1989fa;
+@t-orange: #ff976a;
+@t-orange-dark: #ed6a0c;
+@t-orange-light: #fffbe8;
+@t-green: #07c160;
 
 // Gradient Colors
-@gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
-@gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
+@t-gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
+@t-gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
 
 // Component Colors
-@text-color: @gray-8;
-@active-color: @gray-2;
-@active-opacity: 0.7;
-@disabled-opacity: 0.5;
-@background-color: @gray-1;
-@background-color-light: #fafafa;
-@text-link-color: #576b95;
+@t-text-color: @t-gray-8;
+@t-active-color: @t-gray-2;
+@t-active-opacity: 0.7;
+@t-disabled-opacity: 0.5;
+@t-background-color: @t-gray-1;
+@t-background-color-light: #fafafa;
+@t-text-link-color: #576b95;
 
 // Padding
-@padding-base: 4px;
-@padding-xs: @padding-base * 2;
-@padding-sm: @padding-base * 3;
-@padding-md: @padding-base * 4;
-@padding-lg: @padding-base * 6;
-@padding-xl: @padding-base * 8;
+@t-padding-base: 4px;
+@t-padding-xs: @t-padding-base * 2;
+@t-padding-sm: @t-padding-base * 3;
+@t-padding-md: @t-padding-base * 4;
+@t-padding-lg: @t-padding-base * 6;
+@t-padding-xl: @t-padding-base * 8;
 
 // Font
-@font-size-xs: 10px;
-@font-size-sm: 12px;
-@font-size-md: 14px;
-@font-size-lg: 16px;
-@font-weight-bold: 500;
-@line-height-xs: 14px;
-@line-height-sm: 18px;
-@line-height-md: 20px;
-@line-height-lg: 22px;
-@base-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+@t-font-size-xs: 10px;
+@t-font-size-sm: 12px;
+@t-font-size-md: 14px;
+@t-font-size-lg: 16px;
+@t-font-weight-bold: 500;
+@t-line-height-xs: 14px;
+@t-line-height-sm: 18px;
+@t-line-height-md: 20px;
+@t-line-height-lg: 22px;
+@t-base-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
   Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB',
   'Microsoft Yahei', sans-serif;
-@price-integer-font-family: Avenir-Heavy, PingFang SC, Helvetica Neue, Arial,
+@t-price-integer-font-family: Avenir-Heavy, PingFang SC, Helvetica Neue, Arial,
   sans-serif;
 
 // Animation
-@animation-duration-base: 0.3s;
-@animation-duration-fast: 0.2s;
-@animation-timing-function-enter: ease-out;
-@animation-timing-function-leave: ease-in;
+@t-animation-duration-base: 0.3s;
+@t-animation-duration-fast: 0.2s;
+@t-animation-timing-function-enter: ease-out;
+@t-animation-timing-function-leave: ease-in;
 
 // Border
-@border-color: @gray-3;
-@border-width-base: 1px;
-@border-radius-sm: 2px;
-@border-radius-md: 4px;
-@border-radius-lg: 8px;
-@border-radius-max: 999px;
+@t-border-color: @t-gray-3;
+@t-border-width-base: 1px;
+@t-border-radius-sm: 2px;
+@t-border-radius-md: 4px;
+@t-border-radius-lg: 8px;
+@t-border-radius-max: 999px;
 
 // ActionSheet
-@action-sheet-max-height: 80%;
-@action-sheet-header-height: 48px;
-@action-sheet-header-font-size: @font-size-lg;
-@action-sheet-description-color: @gray-6;
-@action-sheet-description-font-size: @font-size-md;
-@action-sheet-description-line-height: @line-height-md;
-@action-sheet-item-background: @white;
-@action-sheet-item-font-size: @font-size-lg;
-@action-sheet-item-line-height: @line-height-lg;
-@action-sheet-item-text-color: @text-color;
-@action-sheet-item-disabled-text-color: @gray-5;
-@action-sheet-subname-color: @gray-6;
-@action-sheet-subname-font-size: @font-size-sm;
-@action-sheet-subname-line-height: @line-height-sm;
-@action-sheet-close-icon-size: 22px;
-@action-sheet-close-icon-color: @gray-5;
-@action-sheet-close-icon-active-color: @gray-6;
-@action-sheet-close-icon-padding: 0 @padding-md;
-@action-sheet-cancel-text-color: @gray-7;
-@action-sheet-cancel-padding-top: @padding-xs;
-@action-sheet-cancel-padding-color: @background-color;
-@action-sheet-loading-icon-size: 22px;
+@t-action-sheet-max-height: 80%;
+@t-action-sheet-header-height: 48px;
+@t-action-sheet-header-font-size: @t-font-size-lg;
+@t-action-sheet-description-color: @t-gray-6;
+@t-action-sheet-description-font-size: @t-font-size-md;
+@t-action-sheet-description-line-height: @t-line-height-md;
+@t-action-sheet-item-background: @t-white;
+@t-action-sheet-item-font-size: @t-font-size-lg;
+@t-action-sheet-item-line-height: @t-line-height-lg;
+@t-action-sheet-item-text-color: @t-text-color;
+@t-action-sheet-item-disabled-text-color: @t-gray-5;
+@t-action-sheet-subname-color: @t-gray-6;
+@t-action-sheet-subname-font-size: @t-font-size-sm;
+@t-action-sheet-subname-line-height: @t-line-height-sm;
+@t-action-sheet-close-icon-size: 22px;
+@t-action-sheet-close-icon-color: @t-gray-5;
+@t-action-sheet-close-icon-active-color: @t-gray-6;
+@t-action-sheet-close-icon-padding: 0 @t-padding-md;
+@t-action-sheet-cancel-text-color: @t-gray-7;
+@t-action-sheet-cancel-padding-top: @t-padding-xs;
+@t-action-sheet-cancel-padding-color: @t-background-color;
+@t-action-sheet-loading-icon-size: 22px;
 
 // AddressEdit
-@address-edit-padding: @padding-sm;
-@address-edit-buttons-padding: @padding-xl @padding-base;
-@address-edit-button-margin-bottom: @padding-sm;
-@address-edit-detail-finish-color: @blue;
-@address-edit-detail-finish-font-size: @font-size-sm;
+@t-address-edit-padding: @t-padding-sm;
+@t-address-edit-buttons-padding: @t-padding-xl @t-padding-base;
+@t-address-edit-button-margin-bottom: @t-padding-sm;
+@t-address-edit-detail-finish-color: @t-blue;
+@t-address-edit-detail-finish-font-size: @t-font-size-sm;
 
 // AddressList
-@address-list-padding: @padding-sm @padding-sm 80px;
-@address-list-disabled-text-color: @gray-6;
-@address-list-disabled-text-padding: @padding-base * 5 0 @padding-md;
-@address-list-disabled-text-font-size: @font-size-md;
-@address-list-disabled-text-line-height: @line-height-md;
-@address-list-add-button-z-index: 999;
-@address-list-item-padding: @padding-sm;
-@address-list-item-text-color: @text-color;
-@address-list-item-disabled-text-color: @gray-5;
-@address-list-item-font-size: 13px;
-@address-list-item-line-height: @line-height-sm;
-@address-list-item-radio-icon-color: @red;
-@address-list-edit-icon-size: 20px;
+@t-address-list-padding: @t-padding-sm @t-padding-sm 80px;
+@t-address-list-disabled-text-color: @t-gray-6;
+@t-address-list-disabled-text-padding: @t-padding-base * 5 0 @t-padding-md;
+@t-address-list-disabled-text-font-size: @t-font-size-md;
+@t-address-list-disabled-text-line-height: @t-line-height-md;
+@t-address-list-add-button-z-index: 999;
+@t-address-list-item-padding: @t-padding-sm;
+@t-address-list-item-text-color: @t-text-color;
+@t-address-list-item-disabled-text-color: @t-gray-5;
+@t-address-list-item-font-size: 13px;
+@t-address-list-item-line-height: @t-line-height-sm;
+@t-address-list-item-radio-icon-color: @t-red;
+@t-address-list-edit-icon-size: 20px;
 
 // Badge
-@badge-size: 16px;
-@badge-color: @white;
-@badge-padding: 0 3px;
-@badge-font-size: @font-size-sm;
-@badge-font-weight: @font-weight-bold;
-@badge-border-width: @border-width-base;
-@badge-background-color: @red;
-@badge-dot-color: @red;
-@badge-dot-size: 8px;
-@badge-font-family: -apple-system-font, Helvetica Neue, Arial, sans-serif;
+@t-badge-size: 16px;
+@t-badge-color: @t-white;
+@t-badge-padding: 0 3px;
+@t-badge-font-size: @t-font-size-sm;
+@t-badge-font-weight: @t-font-weight-bold;
+@t-badge-border-width: @t-border-width-base;
+@t-badge-background-color: @t-red;
+@t-badge-dot-color: @t-red;
+@t-badge-dot-size: 8px;
+@t-badge-font-family: -apple-system-font, Helvetica Neue, Arial, sans-serif;
 
 // Button
-@button-mini-height: 24px;
-@button-mini-font-size: @font-size-xs;
-@button-small-height: 32px;
-@button-small-font-size: @font-size-sm;
-@button-normal-font-size: @font-size-md;
-@button-large-height: 50px;
-@button-default-height: 44px;
-@button-default-line-height: 1.2;
-@button-default-font-size: @font-size-lg;
-@button-default-color: @text-color;
-@button-default-background-color: @white;
-@button-default-border-color: @border-color;
-@button-primary-color: @white;
-@button-primary-background-color: @green;
-@button-primary-border-color: @green;
-@button-info-color: @white;
-@button-info-background-color: @blue;
-@button-info-border-color: @blue;
-@button-danger-color: @white;
-@button-danger-background-color: @red;
-@button-danger-border-color: @red;
-@button-warning-color: @white;
-@button-warning-background-color: @orange;
-@button-warning-border-color: @orange;
-@button-border-width: @border-width-base;
-@button-border-radius: @border-radius-sm;
-@button-round-border-radius: @border-radius-max;
-@button-plain-background-color: @white;
-@button-disabled-opacity: @disabled-opacity;
+@t-button-mini-height: 24px;
+@t-button-mini-font-size: @t-font-size-xs;
+@t-button-small-height: 32px;
+@t-button-small-font-size: @t-font-size-sm;
+@t-button-normal-font-size: @t-font-size-md;
+@t-button-large-height: 50px;
+@t-button-default-height: 44px;
+@t-button-default-line-height: 1.2;
+@t-button-default-font-size: @t-font-size-lg;
+@t-button-default-color: @t-text-color;
+@t-button-default-background-color: @t-white;
+@t-button-default-border-color: @t-border-color;
+@t-button-primary-color: @t-white;
+@t-button-primary-background-color: @t-green;
+@t-button-primary-border-color: @t-green;
+@t-button-info-color: @t-white;
+@t-button-info-background-color: @t-blue;
+@t-button-info-border-color: @t-blue;
+@t-button-danger-color: @t-white;
+@t-button-danger-background-color: @t-red;
+@t-button-danger-border-color: @t-red;
+@t-button-warning-color: @t-white;
+@t-button-warning-background-color: @t-orange;
+@t-button-warning-border-color: @t-orange;
+@t-button-border-width: @t-border-width-base;
+@t-button-border-radius: @t-border-radius-sm;
+@t-button-round-border-radius: @t-border-radius-max;
+@t-button-plain-background-color: @t-white;
+@t-button-disabled-opacity: @t-disabled-opacity;
 
 // Calendar
-@calendar-background-color: @white;
-@calendar-popup-height: 80%;
-@calendar-header-box-shadow: 0 2px 10px rgba(125, 126, 128, 0.16);
-@calendar-header-title-height: 44px;
-@calendar-header-title-font-size: @font-size-lg;
-@calendar-header-subtitle-font-size: @font-size-md;
-@calendar-weekdays-height: 30px;
-@calendar-weekdays-font-size: @font-size-sm;
-@calendar-month-title-font-size: @font-size-md;
-@calendar-month-mark-color: fade(@gray-2, 80%);
-@calendar-month-mark-font-size: 160px;
-@calendar-day-height: 64px;
-@calendar-day-font-size: @font-size-lg;
-@calendar-range-edge-color: @white;
-@calendar-range-edge-background-color: @red;
-@calendar-range-middle-color: @red;
-@calendar-range-middle-background-opacity: 0.1;
-@calendar-selected-day-size: 54px;
-@calendar-selected-day-color: @white;
-@calendar-info-font-size: @font-size-xs;
-@calendar-info-line-height: @line-height-xs;
-@calendar-selected-day-background-color: @red;
-@calendar-day-disabled-color: @gray-5;
-@calendar-confirm-button-height: 36px;
-@calendar-confirm-button-margin: 7px 0;
+@t-calendar-background-color: @t-white;
+@t-calendar-popup-height: 80%;
+@t-calendar-header-box-shadow: 0 2px 10px rgba(125, 126, 128, 0.16);
+@t-calendar-header-title-height: 44px;
+@t-calendar-header-title-font-size: @t-font-size-lg;
+@t-calendar-header-subtitle-font-size: @t-font-size-md;
+@t-calendar-weekdays-height: 30px;
+@t-calendar-weekdays-font-size: @t-font-size-sm;
+@t-calendar-month-title-font-size: @t-font-size-md;
+@t-calendar-month-mark-color: fade(@t-gray-2, 80%);
+@t-calendar-month-mark-font-size: 160px;
+@t-calendar-day-height: 64px;
+@t-calendar-day-font-size: @t-font-size-lg;
+@t-calendar-range-edge-color: @t-white;
+@t-calendar-range-edge-background-color: @t-red;
+@t-calendar-range-middle-color: @t-red;
+@t-calendar-range-middle-background-opacity: 0.1;
+@t-calendar-selected-day-size: 54px;
+@t-calendar-selected-day-color: @t-white;
+@t-calendar-info-font-size: @t-font-size-xs;
+@t-calendar-info-line-height: @t-line-height-xs;
+@t-calendar-selected-day-background-color: @t-red;
+@t-calendar-day-disabled-color: @t-gray-5;
+@t-calendar-confirm-button-height: 36px;
+@t-calendar-confirm-button-margin: 7px 0;
 
 // Card
-@card-padding: @padding-xs @padding-md;
-@card-font-size: @font-size-sm;
-@card-text-color: @text-color;
-@card-background-color: @background-color-light;
-@card-thumb-size: 88px;
-@card-thumb-border-radius: @border-radius-lg;
-@card-title-line-height: 16px;
-@card-desc-color: @gray-7;
-@card-desc-line-height: @line-height-md;
-@card-price-color: @gray-8;
-@card-origin-price-color: @gray-6;
-@card-num-color: @gray-6;
-@card-origin-price-font-size: @font-size-xs;
-@card-price-font-size: @font-size-sm;
-@card-price-integer-font-size: @font-size-lg;
-@card-price-font-family: @price-integer-font-family;
+@t-card-padding: @t-padding-xs @t-padding-md;
+@t-card-font-size: @t-font-size-sm;
+@t-card-text-color: @t-text-color;
+@t-card-background-color: @t-background-color-light;
+@t-card-thumb-size: 88px;
+@t-card-thumb-border-radius: @t-border-radius-lg;
+@t-card-title-line-height: 16px;
+@t-card-desc-color: @t-gray-7;
+@t-card-desc-line-height: @t-line-height-md;
+@t-card-price-color: @t-gray-8;
+@t-card-origin-price-color: @t-gray-6;
+@t-card-num-color: @t-gray-6;
+@t-card-origin-price-font-size: @t-font-size-xs;
+@t-card-price-font-size: @t-font-size-sm;
+@t-card-price-integer-font-size: @t-font-size-lg;
+@t-card-price-font-family: @t-price-integer-font-family;
 
 // Cascader
-@cascader-header-height: 48px;
-@cascader-title-font-size: @font-size-lg;
-@cascader-title-line-height: 20px;
-@cascader-close-icon-size: 22px;
-@cascader-close-icon-color: @gray-5;
-@cascader-close-icon-active-color: @gray-6;
-@cascader-selected-icon-size: 18px;
-@cascader-tabs-height: 48px;
-@cascader-active-color: @red;
-@cascader-options-height: 384px;
-@cascader-tab-color: @text-color;
-@cascader-unselected-tab-color: @gray-6;
+@t-cascader-header-height: 48px;
+@t-cascader-title-font-size: @t-font-size-lg;
+@t-cascader-title-line-height: 20px;
+@t-cascader-close-icon-size: 22px;
+@t-cascader-close-icon-color: @t-gray-5;
+@t-cascader-close-icon-active-color: @t-gray-6;
+@t-cascader-selected-icon-size: 18px;
+@t-cascader-tabs-height: 48px;
+@t-cascader-active-color: @t-red;
+@t-cascader-options-height: 384px;
+@t-cascader-tab-color: @t-text-color;
+@t-cascader-unselected-tab-color: @t-gray-6;
 
 // Cell
-@cell-font-size: @font-size-md;
-@cell-line-height: 24px;
-@cell-vertical-padding: 10px;
-@cell-horizontal-padding: @padding-md;
-@cell-text-color: @text-color;
-@cell-background-color: @white;
-@cell-border-color: @border-color;
-@cell-active-color: @active-color;
-@cell-required-color: @red;
-@cell-label-color: @gray-6;
-@cell-label-font-size: @font-size-sm;
-@cell-label-line-height: @line-height-sm;
-@cell-label-margin-top: @padding-base;
-@cell-value-color: @gray-6;
-@cell-icon-size: 16px;
-@cell-right-icon-color: @gray-6;
-@cell-large-vertical-padding: @padding-sm;
-@cell-large-title-font-size: @font-size-lg;
-@cell-large-label-font-size: @font-size-md;
+@t-cell-font-size: @t-font-size-md;
+@t-cell-line-height: 24px;
+@t-cell-vertical-padding: 10px;
+@t-cell-horizontal-padding: @t-padding-md;
+@t-cell-text-color: @t-text-color;
+@t-cell-background-color: @t-white;
+@t-cell-border-color: @t-border-color;
+@t-cell-active-color: @t-active-color;
+@t-cell-required-color: @t-red;
+@t-cell-label-color: @t-gray-6;
+@t-cell-label-font-size: @t-font-size-sm;
+@t-cell-label-line-height: @t-line-height-sm;
+@t-cell-label-margin-top: @t-padding-base;
+@t-cell-value-color: @t-gray-6;
+@t-cell-icon-size: 16px;
+@t-cell-right-icon-color: @t-gray-6;
+@t-cell-large-vertical-padding: @t-padding-sm;
+@t-cell-large-title-font-size: @t-font-size-lg;
+@t-cell-large-label-font-size: @t-font-size-md;
 
 // CellGroup
-@cell-group-background-color: @white;
-@cell-group-title-color: @gray-6;
-@cell-group-title-padding: @padding-md @padding-md @padding-xs;
-@cell-group-title-font-size: @font-size-md;
-@cell-group-title-line-height: 16px;
-@cell-group-inset-padding: 0 @padding-md;
-@cell-group-inset-border-radius: @border-radius-lg;
-@cell-group-inset-title-padding: @padding-md @padding-md @padding-xs @padding-xl;
+@t-cell-group-background-color: @t-white;
+@t-cell-group-title-color: @t-gray-6;
+@t-cell-group-title-padding: @t-padding-md @t-padding-md @t-padding-xs;
+@t-cell-group-title-font-size: @t-font-size-md;
+@t-cell-group-title-line-height: 16px;
+@t-cell-group-inset-padding: 0 @t-padding-md;
+@t-cell-group-inset-border-radius: @t-border-radius-lg;
+@t-cell-group-inset-title-padding: @t-padding-md @t-padding-md @t-padding-xs
+  @t-padding-xl;
 
 // Checkbox
-@checkbox-size: 20px;
-@checkbox-border-color: @gray-5;
-@checkbox-transition-duration: @animation-duration-fast;
-@checkbox-label-margin: @padding-xs;
-@checkbox-label-color: @text-color;
-@checkbox-checked-icon-color: @blue;
-@checkbox-disabled-icon-color: @gray-5;
-@checkbox-disabled-label-color: @gray-5;
-@checkbox-disabled-background-color: @border-color;
+@t-checkbox-size: 20px;
+@t-checkbox-border-color: @t-gray-5;
+@t-checkbox-transition-duration: @t-animation-duration-fast;
+@t-checkbox-label-margin: @t-padding-xs;
+@t-checkbox-label-color: @t-text-color;
+@t-checkbox-checked-icon-color: @t-blue;
+@t-checkbox-disabled-icon-color: @t-gray-5;
+@t-checkbox-disabled-label-color: @t-gray-5;
+@t-checkbox-disabled-background-color: @t-border-color;
 
 // Circle
-@circle-size: 100px;
-@circle-color: @blue;
-@circle-layer-color: @white;
-@circle-text-color: @text-color;
-@circle-text-font-weight: @font-weight-bold;
-@circle-text-font-size: @font-size-md;
-@circle-text-line-height: @line-height-md;
+@t-circle-size: 100px;
+@t-circle-color: @t-blue;
+@t-circle-layer-color: @t-white;
+@t-circle-text-color: @t-text-color;
+@t-circle-text-font-weight: @t-font-weight-bold;
+@t-circle-text-font-size: @t-font-size-md;
+@t-circle-text-line-height: @t-line-height-md;
 
 // Collapse
-@collapse-item-transition-duration: @animation-duration-base;
-@collapse-item-content-padding: @padding-sm @padding-md;
-@collapse-item-content-font-size: @font-size-md;
-@collapse-item-content-line-height: 1.5;
-@collapse-item-content-text-color: @gray-6;
-@collapse-item-content-background-color: @white;
-@collapse-item-title-disabled-color: @gray-5;
+@t-collapse-item-transition-duration: @t-animation-duration-base;
+@t-collapse-item-content-padding: @t-padding-sm @t-padding-md;
+@t-collapse-item-content-font-size: @t-font-size-md;
+@t-collapse-item-content-line-height: 1.5;
+@t-collapse-item-content-text-color: @t-gray-6;
+@t-collapse-item-content-background-color: @t-white;
+@t-collapse-item-title-disabled-color: @t-gray-5;
 
 // ContactCard
-@contact-card-padding: @padding-md;
-@contact-card-add-icon-size: 40px;
-@contact-card-add-icon-color: @blue;
-@contact-card-value-line-height: @line-height-md;
+@t-contact-card-padding: @t-padding-md;
+@t-contact-card-add-icon-size: 40px;
+@t-contact-card-add-icon-color: @t-blue;
+@t-contact-card-value-line-height: @t-line-height-md;
 
 // ContactEdit
-@contact-edit-padding: @padding-md;
-@contact-edit-fields-radius: @border-radius-md;
-@contact-edit-buttons-padding: @padding-xl 0;
-@contact-edit-button-margin-bottom: @padding-sm;
-@contact-edit-button-font-size: 16px;
-@contact-edit-field-label-width: 4.1em;
+@t-contact-edit-padding: @t-padding-md;
+@t-contact-edit-fields-radius: @t-border-radius-md;
+@t-contact-edit-buttons-padding: @t-padding-xl 0;
+@t-contact-edit-button-margin-bottom: @t-padding-sm;
+@t-contact-edit-button-font-size: 16px;
+@t-contact-edit-field-label-width: 4.1em;
 
 // ContactList
-@contact-list-edit-icon-size: 16px;
-@contact-list-add-button-z-index: 999;
-@contact-list-item-padding: @padding-md;
+@t-contact-list-edit-icon-size: 16px;
+@t-contact-list-add-button-z-index: 999;
+@t-contact-list-item-padding: @t-padding-md;
 
 // CountDown
-@count-down-text-color: @text-color;
-@count-down-font-size: @font-size-md;
-@count-down-line-height: @line-height-md;
+@t-count-down-text-color: @t-text-color;
+@t-count-down-font-size: @t-font-size-md;
+@t-count-down-line-height: @t-line-height-md;
 
 // Coupon
-@coupon-margin: 0 @padding-sm @padding-sm;
-@coupon-content-height: 84px;
-@coupon-content-padding: 14px 0;
-@coupon-background-color: @white;
-@coupon-active-background-color: @active-color;
-@coupon-border-radius: @border-radius-lg;
-@coupon-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-@coupon-head-width: 96px;
-@coupon-amount-color: @red;
-@coupon-amount-font-size: 30px;
-@coupon-currency-font-size: 40%;
-@coupon-name-font-size: @font-size-md;
-@coupon-disabled-text-color: @gray-6;
-@coupon-description-padding: @padding-xs @padding-md;
-@coupon-description-border-color: @border-color;
+@t-coupon-margin: 0 @t-padding-sm @t-padding-sm;
+@t-coupon-content-height: 84px;
+@t-coupon-content-padding: 14px 0;
+@t-coupon-background-color: @t-white;
+@t-coupon-active-background-color: @t-active-color;
+@t-coupon-border-radius: @t-border-radius-lg;
+@t-coupon-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+@t-coupon-head-width: 96px;
+@t-coupon-amount-color: @t-red;
+@t-coupon-amount-font-size: 30px;
+@t-coupon-currency-font-size: 40%;
+@t-coupon-name-font-size: @t-font-size-md;
+@t-coupon-disabled-text-color: @t-gray-6;
+@t-coupon-description-padding: @t-padding-xs @t-padding-md;
+@t-coupon-description-border-color: @t-border-color;
 
 // CouponCell
-@coupon-cell-selected-text-color: @text-color;
+@t-coupon-cell-selected-text-color: @t-text-color;
 
 // CouponList
-@coupon-list-background-color: @background-color;
-@coupon-list-field-padding: 5px 0 5px @padding-md;
-@coupon-list-exchange-button-height: 32px;
-@coupon-list-close-button-height: 40px;
-@coupon-list-empty-image-size: 200px;
-@coupon-list-empty-tip-color: @gray-6;
-@coupon-list-empty-tip-font-size: @font-size-md;
-@coupon-list-empty-tip-line-height: @line-height-md;
+@t-coupon-list-background-color: @t-background-color;
+@t-coupon-list-field-padding: 5px 0 5px @t-padding-md;
+@t-coupon-list-exchange-button-height: 32px;
+@t-coupon-list-close-button-height: 40px;
+@t-coupon-list-empty-image-size: 200px;
+@t-coupon-list-empty-tip-color: @t-gray-6;
+@t-coupon-list-empty-tip-font-size: @t-font-size-md;
+@t-coupon-list-empty-tip-line-height: @t-line-height-md;
 
 // Dialog
-@dialog-width: 320px;
-@dialog-small-screen-width: 90%;
-@dialog-font-size: @font-size-lg;
-@dialog-transition: @animation-duration-base;
-@dialog-border-radius: 16px;
-@dialog-background-color: @white;
-@dialog-header-font-weight: @font-weight-bold;
-@dialog-header-line-height: 24px;
-@dialog-header-padding-top: 26px;
-@dialog-header-isolated-padding: @padding-lg 0;
-@dialog-message-padding: @padding-lg;
-@dialog-message-font-size: @font-size-md;
-@dialog-message-line-height: @line-height-md;
-@dialog-message-max-height: 60vh;
-@dialog-has-title-message-text-color: @gray-7;
-@dialog-has-title-message-padding-top: @padding-xs;
-@dialog-button-height: 48px;
-@dialog-round-button-height: 36px;
-@dialog-confirm-button-text-color: @red;
+@t-dialog-width: 320px;
+@t-dialog-small-screen-width: 90%;
+@t-dialog-font-size: @t-font-size-lg;
+@t-dialog-transition: @t-animation-duration-base;
+@t-dialog-border-radius: 16px;
+@t-dialog-background-color: @t-white;
+@t-dialog-header-font-weight: @t-font-weight-bold;
+@t-dialog-header-line-height: 24px;
+@t-dialog-header-padding-top: 26px;
+@t-dialog-header-isolated-padding: @t-padding-lg 0;
+@t-dialog-message-padding: @t-padding-lg;
+@t-dialog-message-font-size: @t-font-size-md;
+@t-dialog-message-line-height: @t-line-height-md;
+@t-dialog-message-max-height: 60vh;
+@t-dialog-has-title-message-text-color: @t-gray-7;
+@t-dialog-has-title-message-padding-top: @t-padding-xs;
+@t-dialog-button-height: 48px;
+@t-dialog-round-button-height: 36px;
+@t-dialog-confirm-button-text-color: @t-red;
 
 // Divider
-@divider-margin: @padding-md 0;
-@divider-text-color: @gray-6;
-@divider-font-size: @font-size-md;
-@divider-line-height: 24px;
-@divider-border-color: @border-color;
-@divider-content-padding: @padding-md;
-@divider-content-left-width: 10%;
-@divider-content-right-width: 10%;
+@t-divider-margin: @t-padding-md 0;
+@t-divider-text-color: @t-gray-6;
+@t-divider-font-size: @t-font-size-md;
+@t-divider-line-height: 24px;
+@t-divider-border-color: @t-border-color;
+@t-divider-content-padding: @t-padding-md;
+@t-divider-content-left-width: 10%;
+@t-divider-content-right-width: 10%;
 
 // DropdownMenu
-@dropdown-menu-height: 48px;
-@dropdown-menu-background-color: @white;
-@dropdown-menu-box-shadow: 0 2px 12px fade(@gray-7, 12);
-@dropdown-menu-title-font-size: 15px;
-@dropdown-menu-title-text-color: @text-color;
-@dropdown-menu-title-active-text-color: @red;
-@dropdown-menu-title-disabled-text-color: @gray-6;
-@dropdown-menu-title-padding: 0 @padding-xs;
-@dropdown-menu-title-line-height: @line-height-lg;
-@dropdown-menu-option-active-color: @red;
-@dropdown-menu-content-max-height: 80%;
-@dropdown-item-z-index: 10;
+@t-dropdown-menu-height: 48px;
+@t-dropdown-menu-background-color: @t-white;
+@t-dropdown-menu-box-shadow: 0 2px 12px fade(@t-gray-7, 12);
+@t-dropdown-menu-title-font-size: 15px;
+@t-dropdown-menu-title-text-color: @t-text-color;
+@t-dropdown-menu-title-active-text-color: @t-red;
+@t-dropdown-menu-title-disabled-text-color: @t-gray-6;
+@t-dropdown-menu-title-padding: 0 @t-padding-xs;
+@t-dropdown-menu-title-line-height: @t-line-height-lg;
+@t-dropdown-menu-option-active-color: @t-red;
+@t-dropdown-menu-content-max-height: 80%;
+@t-dropdown-item-z-index: 10;
 
 // Empty
-@empty-padding: @padding-xl 0;
-@empty-image-size: 160px;
-@empty-description-margin-top: @padding-md;
-@empty-description-padding: 0 60px;
-@empty-description-color: @gray-6;
-@empty-description-font-size: @font-size-md;
-@empty-description-line-height: @line-height-md;
-@empty-bottom-margin-top: 24px;
+@t-empty-padding: @t-padding-xl 0;
+@t-empty-image-size: 160px;
+@t-empty-description-margin-top: @t-padding-md;
+@t-empty-description-padding: 0 60px;
+@t-empty-description-color: @t-gray-6;
+@t-empty-description-font-size: @t-font-size-md;
+@t-empty-description-line-height: @t-line-height-md;
+@t-empty-bottom-margin-top: 24px;
 
 // Field
-@field-label-width: 6.2em;
-@field-label-color: @gray-7;
-@field-label-margin-right: @padding-sm;
-@field-input-text-color: @text-color;
-@field-input-error-text-color: @red;
-@field-input-disabled-text-color: @gray-5;
-@field-placeholder-text-color: @gray-5;
-@field-icon-size: 16px;
-@field-clear-icon-size: 16px;
-@field-clear-icon-color: @gray-5;
-@field-right-icon-color: @gray-6;
-@field-error-message-color: @red;
-@field-error-message-font-size: 12px;
-@field-text-area-min-height: 60px;
-@field-word-limit-color: @gray-7;
-@field-word-limit-font-size: @font-size-sm;
-@field-word-limit-line-height: 16px;
-@field-disabled-text-color: @gray-5;
+@t-field-label-width: 6.2em;
+@t-field-label-color: @t-gray-7;
+@t-field-label-margin-right: @t-padding-sm;
+@t-field-input-text-color: @t-text-color;
+@t-field-input-error-text-color: @t-red;
+@t-field-input-disabled-text-color: @t-gray-5;
+@t-field-placeholder-text-color: @t-gray-5;
+@t-field-icon-size: 16px;
+@t-field-clear-icon-size: 16px;
+@t-field-clear-icon-color: @t-gray-5;
+@t-field-right-icon-color: @t-gray-6;
+@t-field-error-message-color: @t-red;
+@t-field-error-message-font-size: 12px;
+@t-field-text-area-min-height: 60px;
+@t-field-word-limit-color: @t-gray-7;
+@t-field-word-limit-font-size: @t-font-size-sm;
+@t-field-word-limit-line-height: 16px;
+@t-field-disabled-text-color: @t-gray-5;
 
 // GridItem
-@grid-item-content-padding: @padding-md @padding-xs;
-@grid-item-content-background-color: @white;
-@grid-item-content-active-color: @active-color;
-@grid-item-icon-size: 28px;
-@grid-item-text-color: @gray-7;
-@grid-item-text-font-size: @font-size-sm;
+@t-grid-item-content-padding: @t-padding-md @t-padding-xs;
+@t-grid-item-content-background-color: @t-white;
+@t-grid-item-content-active-color: @t-active-color;
+@t-grid-item-icon-size: 28px;
+@t-grid-item-text-color: @t-gray-7;
+@t-grid-item-text-font-size: @t-font-size-sm;
 
 // GoodsAction
-@goods-action-background-color: @white;
-@goods-action-height: 50px;
-@goods-action-icon-width: 48px;
-@goods-action-icon-height: 100%;
-@goods-action-icon-color: @text-color;
-@goods-action-icon-size: 18px;
-@goods-action-icon-font-size: @font-size-xs;
-@goods-action-icon-active-color: @active-color;
-@goods-action-icon-text-color: @gray-7;
-@goods-action-button-height: 40px;
-@goods-action-button-warning-color: @gradient-orange;
-@goods-action-button-danger-color: @gradient-red;
+@t-goods-action-background-color: @t-white;
+@t-goods-action-height: 50px;
+@t-goods-action-icon-width: 48px;
+@t-goods-action-icon-height: 100%;
+@t-goods-action-icon-color: @t-text-color;
+@t-goods-action-icon-size: 18px;
+@t-goods-action-icon-font-size: @t-font-size-xs;
+@t-goods-action-icon-active-color: @t-active-color;
+@t-goods-action-icon-text-color: @t-gray-7;
+@t-goods-action-button-height: 40px;
+@t-goods-action-button-warning-color: @t-gradient-orange;
+@t-goods-action-button-danger-color: @t-gradient-red;
 
 // IndexAnchor
-@index-anchor-z-index: 1;
-@index-anchor-padding: 0 @padding-md;
-@index-anchor-text-color: @text-color;
-@index-anchor-font-weight: @font-weight-bold;
-@index-anchor-font-size: @font-size-md;
-@index-anchor-line-height: 32px;
-@index-anchor-background-color: transparent;
-@index-anchor-sticky-text-color: @red;
-@index-anchor-sticky-background-color: @white;
+@t-index-anchor-z-index: 1;
+@t-index-anchor-padding: 0 @t-padding-md;
+@t-index-anchor-text-color: @t-text-color;
+@t-index-anchor-font-weight: @t-font-weight-bold;
+@t-index-anchor-font-size: @t-font-size-md;
+@t-index-anchor-line-height: 32px;
+@t-index-anchor-background-color: transparent;
+@t-index-anchor-sticky-text-color: @t-red;
+@t-index-anchor-sticky-background-color: @t-white;
 
 // IndexBar
-@index-bar-sidebar-z-index: 2;
-@index-bar-index-font-size: @font-size-xs;
-@index-bar-index-line-height: @line-height-xs;
-@index-bar-index-active-color: @red;
+@t-index-bar-sidebar-z-index: 2;
+@t-index-bar-index-font-size: @t-font-size-xs;
+@t-index-bar-index-line-height: @t-line-height-xs;
+@t-index-bar-index-active-color: @t-red;
 
 // Info
-@info-size: 16px;
-@info-color: @white;
-@info-padding: 0 3px;
-@info-font-size: @font-size-sm;
-@info-font-weight: @font-weight-bold;
-@info-border-width: @border-width-base;
-@info-background-color: @red;
-@info-dot-color: @red;
-@info-dot-size: 8px;
-@info-font-family: -apple-system-font, Helvetica Neue, Arial, sans-serif;
+@t-info-size: 16px;
+@t-info-color: @t-white;
+@t-info-padding: 0 3px;
+@t-info-font-size: @t-font-size-sm;
+@t-info-font-weight: @t-font-weight-bold;
+@t-info-border-width: @t-border-width-base;
+@t-info-background-color: @t-red;
+@t-info-dot-color: @t-red;
+@t-info-dot-size: 8px;
+@t-info-font-family: -apple-system-font, Helvetica Neue, Arial, sans-serif;
 
 // Image
-@image-placeholder-text-color: @gray-6;
-@image-placeholder-font-size: @font-size-md;
-@image-placeholder-background-color: @background-color;
-@image-loading-icon-size: 32px;
-@image-loading-icon-color: @gray-4;
-@image-error-icon-size: 32px;
-@image-error-icon-color: @gray-4;
+@t-image-placeholder-text-color: @t-gray-6;
+@t-image-placeholder-font-size: @t-font-size-md;
+@t-image-placeholder-background-color: @t-background-color;
+@t-image-loading-icon-size: 32px;
+@t-image-loading-icon-color: @t-gray-4;
+@t-image-error-icon-size: 32px;
+@t-image-error-icon-color: @t-gray-4;
 
 // ImagePreview
-@image-preview-index-text-color: @white;
-@image-preview-index-font-size: @font-size-md;
-@image-preview-index-line-height: @line-height-md;
-@image-preview-index-text-shadow: 0 1px 1px @gray-8;
-@image-preview-overlay-background-color: rgba(0, 0, 0, 0.9);
-@image-preview-close-icon-size: 22px;
-@image-preview-close-icon-color: @gray-5;
-@image-preview-close-icon-active-color: @gray-6;
-@image-preview-close-icon-margin: @padding-md;
-@image-preview-close-icon-z-index: 1;
+@t-image-preview-index-text-color: @t-white;
+@t-image-preview-index-font-size: @t-font-size-md;
+@t-image-preview-index-line-height: @t-line-height-md;
+@t-image-preview-index-text-shadow: 0 1px 1px @t-gray-8;
+@t-image-preview-overlay-background-color: rgba(0, 0, 0, 0.9);
+@t-image-preview-close-icon-size: 22px;
+@t-image-preview-close-icon-color: @t-gray-5;
+@t-image-preview-close-icon-active-color: @t-gray-6;
+@t-image-preview-close-icon-margin: @t-padding-md;
+@t-image-preview-close-icon-z-index: 1;
 
 // List
-@list-text-color: @gray-6;
-@list-text-font-size: @font-size-md;
-@list-text-line-height: 50px;
+@t-list-text-color: @t-gray-6;
+@t-list-text-font-size: @t-font-size-md;
+@t-list-text-line-height: 50px;
 
 // Loading
-@loading-text-color: @gray-6;
-@loading-text-font-size: @font-size-md;
-@loading-spinner-color: @gray-5;
-@loading-spinner-size: 30px;
-@loading-spinner-animation-duration: 0.8s;
+@t-loading-text-color: @t-gray-6;
+@t-loading-text-font-size: @t-font-size-md;
+@t-loading-spinner-color: @t-gray-5;
+@t-loading-spinner-size: 30px;
+@t-loading-spinner-animation-duration: 0.8s;
 
 // NavBar
-@nav-bar-height: 46px;
-@nav-bar-background-color: @white;
-@nav-bar-arrow-size: 16px;
-@nav-bar-icon-color: @blue;
-@nav-bar-text-color: @blue;
-@nav-bar-title-font-size: @font-size-lg;
-@nav-bar-title-text-color: @text-color;
-@nav-bar-z-index: 1;
+@t-nav-bar-height: 46px;
+@t-nav-bar-background-color: @t-white;
+@t-nav-bar-arrow-size: 16px;
+@t-nav-bar-icon-color: @t-blue;
+@t-nav-bar-text-color: @t-blue;
+@t-nav-bar-title-font-size: @t-font-size-lg;
+@t-nav-bar-title-text-color: @t-text-color;
+@t-nav-bar-z-index: 1;
 
 // NoticeBar
-@notice-bar-height: 40px;
-@notice-bar-padding: 0 @padding-md;
-@notice-bar-wrapable-padding: @padding-xs @padding-md;
-@notice-bar-text-color: @orange-dark;
-@notice-bar-font-size: @font-size-md;
-@notice-bar-line-height: 24px;
-@notice-bar-background-color: @orange-light;
-@notice-bar-icon-size: 16px;
-@notice-bar-icon-min-width: 24px;
+@t-notice-bar-height: 40px;
+@t-notice-bar-padding: 0 @t-padding-md;
+@t-notice-bar-wrapable-padding: @t-padding-xs @t-padding-md;
+@t-notice-bar-text-color: @t-orange-dark;
+@t-notice-bar-font-size: @t-font-size-md;
+@t-notice-bar-line-height: 24px;
+@t-notice-bar-background-color: @t-orange-light;
+@t-notice-bar-icon-size: 16px;
+@t-notice-bar-icon-min-width: 24px;
 
 // Notify
-@notify-text-color: @white;
-@notify-padding: @padding-xs @padding-md;
-@notify-font-size: @font-size-md;
-@notify-line-height: @line-height-md;
-@notify-primary-background-color: @blue;
-@notify-success-background-color: @green;
-@notify-danger-background-color: @red;
-@notify-warning-background-color: @orange;
+@t-notify-text-color: @t-white;
+@t-notify-padding: @t-padding-xs @t-padding-md;
+@t-notify-font-size: @t-font-size-md;
+@t-notify-line-height: @t-line-height-md;
+@t-notify-primary-background-color: @t-blue;
+@t-notify-success-background-color: @t-green;
+@t-notify-danger-background-color: @t-red;
+@t-notify-warning-background-color: @t-orange;
 
 // NumberKeyboard
-@number-keyboard-background-color: @gray-2;
-@number-keyboard-key-height: 48px;
-@number-keyboard-key-font-size: 28px;
-@number-keyboard-key-active-color: @gray-3;
-@number-keyboard-delete-font-size: @font-size-lg;
-@number-keyboard-title-color: @gray-7;
-@number-keyboard-title-height: 34px;
-@number-keyboard-title-font-size: @font-size-lg;
-@number-keyboard-close-padding: 0 @padding-md;
-@number-keyboard-close-color: @text-link-color;
-@number-keyboard-close-font-size: @font-size-md;
-@number-keyboard-button-text-color: @white;
-@number-keyboard-button-background-color: @blue;
-@number-keyboard-cursor-color: @text-color;
-@number-keyboard-cursor-width: 1px;
-@number-keyboard-cursor-height: 40%;
-@number-keyboard-cursor-animation-duration: 1s;
-@number-keyboard-z-index: 100;
+@t-number-keyboard-background-color: @t-gray-2;
+@t-number-keyboard-key-height: 48px;
+@t-number-keyboard-key-font-size: 28px;
+@t-number-keyboard-key-active-color: @t-gray-3;
+@t-number-keyboard-delete-font-size: @t-font-size-lg;
+@t-number-keyboard-title-color: @t-gray-7;
+@t-number-keyboard-title-height: 34px;
+@t-number-keyboard-title-font-size: @t-font-size-lg;
+@t-number-keyboard-close-padding: 0 @t-padding-md;
+@t-number-keyboard-close-color: @t-text-link-color;
+@t-number-keyboard-close-font-size: @t-font-size-md;
+@t-number-keyboard-button-text-color: @t-white;
+@t-number-keyboard-button-background-color: @t-blue;
+@t-number-keyboard-cursor-color: @t-text-color;
+@t-number-keyboard-cursor-width: 1px;
+@t-number-keyboard-cursor-height: 40%;
+@t-number-keyboard-cursor-animation-duration: 1s;
+@t-number-keyboard-z-index: 100;
 
 // Overlay
-@overlay-z-index: 1;
-@overlay-background-color: rgba(0, 0, 0, 0.7);
+@t-overlay-z-index: 1;
+@t-overlay-background-color: rgba(0, 0, 0, 0.7);
 
 // Pagination
-@pagination-height: 40px;
-@pagination-font-size: @font-size-md;
-@pagination-item-width: 36px;
-@pagination-item-default-color: @blue;
-@pagination-item-disabled-color: @gray-7;
-@pagination-item-disabled-background-color: @background-color;
-@pagination-background-color: @white;
-@pagination-desc-color: @gray-7;
-@pagination-disabled-opacity: @disabled-opacity;
+@t-pagination-height: 40px;
+@t-pagination-font-size: @t-font-size-md;
+@t-pagination-item-width: 36px;
+@t-pagination-item-default-color: @t-blue;
+@t-pagination-item-disabled-color: @t-gray-7;
+@t-pagination-item-disabled-background-color: @t-background-color;
+@t-pagination-background-color: @t-white;
+@t-pagination-desc-color: @t-gray-7;
+@t-pagination-disabled-opacity: @t-disabled-opacity;
 
 // Panel
-@panel-background-color: @white;
-@panel-header-value-color: @red;
-@panel-footer-padding: @padding-xs @padding-md;
+@t-panel-background-color: @t-white;
+@t-panel-header-value-color: @t-red;
+@t-panel-footer-padding: @t-padding-xs @t-padding-md;
 
 // PasswordInput
-@password-input-height: 50px;
-@password-input-margin: 0 @padding-md;
-@password-input-font-size: 20px;
-@password-input-border-radius: 6px;
-@password-input-background-color: @white;
-@password-input-info-color: @gray-6;
-@password-input-info-font-size: @font-size-md;
-@password-input-error-info-color: @red;
-@password-input-dot-size: 10px;
-@password-input-dot-color: @black;
+@t-password-input-height: 50px;
+@t-password-input-margin: 0 @t-padding-md;
+@t-password-input-font-size: 20px;
+@t-password-input-border-radius: 6px;
+@t-password-input-background-color: @t-white;
+@t-password-input-info-color: @t-gray-6;
+@t-password-input-info-font-size: @t-font-size-md;
+@t-password-input-error-info-color: @t-red;
+@t-password-input-dot-size: 10px;
+@t-password-input-dot-color: @t-black;
 
 // Picker
-@picker-background-color: @white;
-@picker-toolbar-height: 44px;
-@picker-title-font-size: @font-size-lg;
-@picker-title-line-height: @line-height-md;
-@picker-action-padding: 0 @padding-md;
-@picker-action-font-size: @font-size-md;
-@picker-confirm-action-color: @text-link-color;
-@picker-cancel-action-color: @gray-6;
-@picker-option-font-size: @font-size-lg;
-@picker-option-text-color: @black;
-@picker-option-disabled-opacity: 0.3;
-@picker-loading-icon-color: @blue;
-@picker-loading-mask-color: rgba(255, 255, 255, 0.9);
+@t-picker-background-color: @t-white;
+@t-picker-toolbar-height: 44px;
+@t-picker-title-font-size: @t-font-size-lg;
+@t-picker-title-line-height: @t-line-height-md;
+@t-picker-action-padding: 0 @t-padding-md;
+@t-picker-action-font-size: @t-font-size-md;
+@t-picker-confirm-action-color: @t-text-link-color;
+@t-picker-cancel-action-color: @t-gray-6;
+@t-picker-option-font-size: @t-font-size-lg;
+@t-picker-option-text-color: @t-black;
+@t-picker-option-disabled-opacity: 0.3;
+@t-picker-loading-icon-color: @t-blue;
+@t-picker-loading-mask-color: rgba(255, 255, 255, 0.9);
 
 // Popover
-@popover-arrow-size: 6px;
-@popover-border-radius: @border-radius-lg;
-@popover-action-width: 128px;
-@popover-action-height: 44px;
-@popover-action-font-size: @font-size-md;
-@popover-action-line-height: @line-height-md;
-@popover-action-icon-size: 20px;
-@popover-light-text-color: @text-color;
-@popover-light-background-color: @white;
-@popover-light-action-disabled-text-color: @gray-5;
-@popover-dark-text-color: @white;
-@popover-dark-background-color: #4a4a4a;
-@popover-dark-action-disabled-text-color: @gray-6;
+@t-popover-arrow-size: 6px;
+@t-popover-border-radius: @t-border-radius-lg;
+@t-popover-action-width: 128px;
+@t-popover-action-height: 44px;
+@t-popover-action-font-size: @t-font-size-md;
+@t-popover-action-line-height: @t-line-height-md;
+@t-popover-action-icon-size: 20px;
+@t-popover-light-text-color: @t-text-color;
+@t-popover-light-background-color: @t-white;
+@t-popover-light-action-disabled-text-color: @t-gray-5;
+@t-popover-dark-text-color: @t-white;
+@t-popover-dark-background-color: #4a4a4a;
+@t-popover-dark-action-disabled-text-color: @t-gray-6;
 
 // Popup
-@popup-background-color: @white;
-@popup-transition: transform @animation-duration-base;
-@popup-round-border-radius: 16px;
-@popup-close-icon-size: 22px;
-@popup-close-icon-color: @gray-5;
-@popup-close-icon-active-color: @gray-6;
-@popup-close-icon-margin: 16px;
-@popup-close-icon-z-index: 1;
+@t-popup-background-color: @t-white;
+@t-popup-transition: transform @t-animation-duration-base;
+@t-popup-round-border-radius: 16px;
+@t-popup-close-icon-size: 22px;
+@t-popup-close-icon-color: @t-gray-5;
+@t-popup-close-icon-active-color: @t-gray-6;
+@t-popup-close-icon-margin: 16px;
+@t-popup-close-icon-z-index: 1;
 
 // Progress
-@progress-height: 4px;
-@progress-color: @blue;
-@progress-background-color: @gray-3;
-@progress-pivot-padding: 0 5px;
-@progress-pivot-text-color: @white;
-@progress-pivot-font-size: @font-size-xs;
-@progress-pivot-line-height: 1.6;
-@progress-pivot-background-color: @blue;
+@t-progress-height: 4px;
+@t-progress-color: @t-blue;
+@t-progress-background-color: @t-gray-3;
+@t-progress-pivot-padding: 0 5px;
+@t-progress-pivot-text-color: @t-white;
+@t-progress-pivot-font-size: @t-font-size-xs;
+@t-progress-pivot-line-height: 1.6;
+@t-progress-pivot-background-color: @t-blue;
 
 // PullRefresh
-@pull-refresh-head-height: 50px;
-@pull-refresh-head-font-size: @font-size-md;
-@pull-refresh-head-text-color: @gray-6;
+@t-pull-refresh-head-height: 50px;
+@t-pull-refresh-head-font-size: @t-font-size-md;
+@t-pull-refresh-head-text-color: @t-gray-6;
 
 // Radio
-@radio-size: 20px;
-@radio-border-color: @gray-5;
-@radio-transition-duration: @animation-duration-fast;
-@radio-label-margin: @padding-xs;
-@radio-label-color: @text-color;
-@radio-checked-icon-color: @blue;
-@radio-disabled-icon-color: @gray-5;
-@radio-disabled-label-color: @gray-5;
-@radio-disabled-background-color: @border-color;
+@t-radio-size: 20px;
+@t-radio-border-color: @t-gray-5;
+@t-radio-transition-duration: @t-animation-duration-fast;
+@t-radio-label-margin: @t-padding-xs;
+@t-radio-label-color: @t-text-color;
+@t-radio-checked-icon-color: @t-blue;
+@t-radio-disabled-icon-color: @t-gray-5;
+@t-radio-disabled-label-color: @t-gray-5;
+@t-radio-disabled-background-color: @t-border-color;
 
 // Rate
-@rate-icon-size: 20px;
-@rate-icon-gutter: @padding-base;
-@rate-icon-void-color: @gray-5;
-@rate-icon-full-color: @red;
-@rate-icon-disabled-color: @gray-5;
+@t-rate-icon-size: 20px;
+@t-rate-icon-gutter: @t-padding-base;
+@t-rate-icon-void-color: @t-gray-5;
+@t-rate-icon-full-color: @t-red;
+@t-rate-icon-disabled-color: @t-gray-5;
 
 // ShareSheet
-@share-sheet-header-padding: @padding-sm @padding-md @padding-base;
-@share-sheet-title-color: @text-color;
-@share-sheet-title-font-size: @font-size-md;
-@share-sheet-title-line-height: @line-height-md;
-@share-sheet-description-color: @gray-6;
-@share-sheet-description-font-size: @font-size-sm;
-@share-sheet-description-line-height: 16px;
-@share-sheet-icon-size: 48px;
-@share-sheet-option-name-color: @gray-7;
-@share-sheet-option-name-font-size: @font-size-sm;
-@share-sheet-option-description-color: @gray-5;
-@share-sheet-option-description-font-size: @font-size-sm;
-@share-sheet-cancel-button-font-size: @font-size-lg;
-@share-sheet-cancel-button-height: 48px;
-@share-sheet-cancel-button-background: @white;
+@t-share-sheet-header-padding: @t-padding-sm @t-padding-md @t-padding-base;
+@t-share-sheet-title-color: @t-text-color;
+@t-share-sheet-title-font-size: @t-font-size-md;
+@t-share-sheet-title-line-height: @t-line-height-md;
+@t-share-sheet-description-color: @t-gray-6;
+@t-share-sheet-description-font-size: @t-font-size-sm;
+@t-share-sheet-description-line-height: 16px;
+@t-share-sheet-icon-size: 48px;
+@t-share-sheet-option-name-color: @t-gray-7;
+@t-share-sheet-option-name-font-size: @t-font-size-sm;
+@t-share-sheet-option-description-color: @t-gray-5;
+@t-share-sheet-option-description-font-size: @t-font-size-sm;
+@t-share-sheet-cancel-button-font-size: @t-font-size-lg;
+@t-share-sheet-cancel-button-height: 48px;
+@t-share-sheet-cancel-button-background: @t-white;
 
 // Search
-@search-padding: 10px @padding-sm;
-@search-background-color: @white;
-@search-content-background-color: @gray-1;
-@search-input-height: 34px;
-@search-label-padding: 0 5px;
-@search-label-color: @text-color;
-@search-label-font-size: @font-size-md;
-@search-left-icon-color: @gray-6;
-@search-action-padding: 0 @padding-xs;
-@search-action-text-color: @text-color;
-@search-action-font-size: @font-size-md;
+@t-search-padding: 10px @t-padding-sm;
+@t-search-background-color: @t-white;
+@t-search-content-background-color: @t-gray-1;
+@t-search-input-height: 34px;
+@t-search-label-padding: 0 5px;
+@t-search-label-color: @t-text-color;
+@t-search-label-font-size: @t-font-size-md;
+@t-search-left-icon-color: @t-gray-6;
+@t-search-action-padding: 0 @t-padding-xs;
+@t-search-action-text-color: @t-text-color;
+@t-search-action-font-size: @t-font-size-md;
 
 // Sidebar
-@sidebar-width: 80px;
-@sidebar-font-size: @font-size-md;
-@sidebar-line-height: @line-height-md;
-@sidebar-text-color: @text-color;
-@sidebar-disabled-text-color: @gray-5;
-@sidebar-padding: 20px @padding-sm;
-@sidebar-active-color: @active-color;
-@sidebar-background-color: @background-color;
-@sidebar-selected-font-weight: @font-weight-bold;
-@sidebar-selected-text-color: @text-color;
-@sidebar-selected-border-width: 4px;
-@sidebar-selected-border-height: 16px;
-@sidebar-selected-border-color: @red;
-@sidebar-selected-background-color: @white;
+@t-sidebar-width: 80px;
+@t-sidebar-font-size: @t-font-size-md;
+@t-sidebar-line-height: @t-line-height-md;
+@t-sidebar-text-color: @t-text-color;
+@t-sidebar-disabled-text-color: @t-gray-5;
+@t-sidebar-padding: 20px @t-padding-sm;
+@t-sidebar-active-color: @t-active-color;
+@t-sidebar-background-color: @t-background-color;
+@t-sidebar-selected-font-weight: @t-font-weight-bold;
+@t-sidebar-selected-text-color: @t-text-color;
+@t-sidebar-selected-border-width: 4px;
+@t-sidebar-selected-border-height: 16px;
+@t-sidebar-selected-border-color: @t-red;
+@t-sidebar-selected-background-color: @t-white;
 
 // Skeleton
-@skeleton-row-height: 16px;
-@skeleton-row-background-color: @active-color;
-@skeleton-row-margin-top: @padding-sm;
-@skeleton-title-width: 40%;
-@skeleton-avatar-size: 32px;
-@skeleton-avatar-background-color: @active-color;
-@skeleton-animation-duration: 1.2s;
+@t-skeleton-row-height: 16px;
+@t-skeleton-row-background-color: @t-active-color;
+@t-skeleton-row-margin-top: @t-padding-sm;
+@t-skeleton-title-width: 40%;
+@t-skeleton-avatar-size: 32px;
+@t-skeleton-avatar-background-color: @t-active-color;
+@t-skeleton-animation-duration: 1.2s;
 
 // Slider
-@slider-active-background-color: @blue;
-@slider-inactive-background-color: @gray-3;
-@slider-disabled-opacity: @disabled-opacity;
-@slider-bar-height: 2px;
-@slider-button-width: 24px;
-@slider-button-height: 24px;
-@slider-button-border-radius: 50%;
-@slider-button-background-color: @white;
-@slider-button-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+@t-slider-active-background-color: @t-blue;
+@t-slider-inactive-background-color: @t-gray-3;
+@t-slider-disabled-opacity: @t-disabled-opacity;
+@t-slider-bar-height: 2px;
+@t-slider-button-width: 24px;
+@t-slider-button-height: 24px;
+@t-slider-button-border-radius: 50%;
+@t-slider-button-background-color: @t-white;
+@t-slider-button-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 
 // Step
-@step-text-color: @gray-6;
-@step-active-color: @green;
-@step-process-text-color: @text-color;
-@step-font-size: @font-size-md;
-@step-line-color: @border-color;
-@step-finish-line-color: @green;
-@step-finish-text-color: @text-color;
-@step-icon-size: 12px;
-@step-circle-size: 5px;
-@step-circle-color: @gray-6;
-@step-horizontal-title-font-size: @font-size-sm;
+@t-step-text-color: @t-gray-6;
+@t-step-active-color: @t-green;
+@t-step-process-text-color: @t-text-color;
+@t-step-font-size: @t-font-size-md;
+@t-step-line-color: @t-border-color;
+@t-step-finish-line-color: @t-green;
+@t-step-finish-text-color: @t-text-color;
+@t-step-icon-size: 12px;
+@t-step-circle-size: 5px;
+@t-step-circle-color: @t-gray-6;
+@t-step-horizontal-title-font-size: @t-font-size-sm;
 
 // Steps
-@steps-background-color: @white;
+@t-steps-background-color: @t-white;
 
 // Sticky
-@sticky-z-index: 99;
+@t-sticky-z-index: 99;
 
 // Stepper
-@stepper-active-color: #e8e8e8;
-@stepper-background-color: @active-color;
-@stepper-button-icon-color: @text-color;
-@stepper-button-disabled-color: @background-color;
-@stepper-button-disabled-icon-color: @gray-5;
-@stepper-button-round-theme-color: @red;
-@stepper-input-width: 32px;
-@stepper-input-height: 28px;
-@stepper-input-font-size: @font-size-md;
-@stepper-input-line-height: normal;
-@stepper-input-text-color: @text-color;
-@stepper-input-disabled-text-color: @gray-5;
-@stepper-input-disabled-background-color: @active-color;
-@stepper-border-radius: @border-radius-md;
+@t-stepper-active-color: #e8e8e8;
+@t-stepper-background-color: @t-active-color;
+@t-stepper-button-icon-color: @t-text-color;
+@t-stepper-button-disabled-color: @t-background-color;
+@t-stepper-button-disabled-icon-color: @t-gray-5;
+@t-stepper-button-round-theme-color: @t-red;
+@t-stepper-input-width: 32px;
+@t-stepper-input-height: 28px;
+@t-stepper-input-font-size: @t-font-size-md;
+@t-stepper-input-line-height: normal;
+@t-stepper-input-text-color: @t-text-color;
+@t-stepper-input-disabled-text-color: @t-gray-5;
+@t-stepper-input-disabled-background-color: @t-active-color;
+@t-stepper-border-radius: @t-border-radius-md;
 
 // SubmitBar
-@submit-bar-height: 50px;
-@submit-bar-z-index: 100;
-@submit-bar-background-color: @white;
-@submit-bar-button-width: 110px;
-@submit-bar-price-color: @red;
-@submit-bar-price-font-size: @font-size-md;
-@submit-bar-currency-font-size: @font-size-md;
-@submit-bar-text-color: @text-color;
-@submit-bar-text-font-size: @font-size-md;
-@submit-bar-tip-padding: @padding-xs @padding-sm;
-@submit-bar-tip-font-size: @font-size-sm;
-@submit-bar-tip-line-height: 1.5;
-@submit-bar-tip-color: #f56723;
-@submit-bar-tip-background-color: #fff7cc;
-@submit-bar-tip-icon-size: 12px;
-@submit-bar-button-height: 40px;
-@submit-bar-padding: 0 @padding-md;
-@submit-bar-price-integer-font-size: 20px;
-@submit-bar-price-font-family: @price-integer-font-family;
+@t-submit-bar-height: 50px;
+@t-submit-bar-z-index: 100;
+@t-submit-bar-background-color: @t-white;
+@t-submit-bar-button-width: 110px;
+@t-submit-bar-price-color: @t-red;
+@t-submit-bar-price-font-size: @t-font-size-md;
+@t-submit-bar-currency-font-size: @t-font-size-md;
+@t-submit-bar-text-color: @t-text-color;
+@t-submit-bar-text-font-size: @t-font-size-md;
+@t-submit-bar-tip-padding: @t-padding-xs @t-padding-sm;
+@t-submit-bar-tip-font-size: @t-font-size-sm;
+@t-submit-bar-tip-line-height: 1.5;
+@t-submit-bar-tip-color: #f56723;
+@t-submit-bar-tip-background-color: #fff7cc;
+@t-submit-bar-tip-icon-size: 12px;
+@t-submit-bar-button-height: 40px;
+@t-submit-bar-padding: 0 @t-padding-md;
+@t-submit-bar-price-integer-font-size: 20px;
+@t-submit-bar-price-font-family: @t-price-integer-font-family;
 
 // Swipe
-@swipe-indicator-size: 6px;
-@swipe-indicator-margin: @padding-sm;
-@swipe-indicator-active-opacity: 1;
-@swipe-indicator-inactive-opacity: 0.3;
-@swipe-indicator-active-background-color: @blue;
-@swipe-indicator-inactive-background-color: @border-color;
+@t-swipe-indicator-size: 6px;
+@t-swipe-indicator-margin: @t-padding-sm;
+@t-swipe-indicator-active-opacity: 1;
+@t-swipe-indicator-inactive-opacity: 0.3;
+@t-swipe-indicator-active-background-color: @t-blue;
+@t-swipe-indicator-inactive-background-color: @t-border-color;
 
 // Switch
-@switch-size: 30px;
-@switch-width: 2em;
-@switch-height: 1em;
-@switch-node-size: 1em;
-@switch-node-background-color: @white;
-@switch-node-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.05),
+@t-switch-size: 30px;
+@t-switch-width: 2em;
+@t-switch-height: 1em;
+@t-switch-node-size: 1em;
+@t-switch-node-background-color: @t-white;
+@t-switch-node-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.05),
   0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.05);
-@switch-background-color: @white;
-@switch-on-background-color: @blue;
-@switch-transition-duration: @animation-duration-base;
-@switch-disabled-opacity: @disabled-opacity;
-@switch-border: @border-width-base solid rgba(0, 0, 0, 0.1);
+@t-switch-background-color: @t-white;
+@t-switch-on-background-color: @t-blue;
+@t-switch-transition-duration: @t-animation-duration-base;
+@t-switch-disabled-opacity: @t-disabled-opacity;
+@t-switch-border: @t-border-width-base solid rgba(0, 0, 0, 0.1);
 
 // SwitchCell
-@switch-cell-padding-top: @cell-vertical-padding - 1px;
-@switch-cell-padding-bottom: @cell-vertical-padding - 1px;
-@switch-cell-large-padding-top: @cell-large-vertical-padding - 1px;
-@switch-cell-large-padding-bottom: @cell-large-vertical-padding - 1px;
+@t-switch-cell-padding-top: @t-cell-vertical-padding - 1px;
+@t-switch-cell-padding-bottom: @t-cell-vertical-padding - 1px;
+@t-switch-cell-large-padding-top: @t-cell-large-vertical-padding - 1px;
+@t-switch-cell-large-padding-bottom: @t-cell-large-vertical-padding - 1px;
 
 // Tabbar
-@tabbar-height: 50px;
-@tabbar-z-index: 1;
-@tabbar-background-color: @white;
+@t-tabbar-height: 50px;
+@t-tabbar-z-index: 1;
+@t-tabbar-background-color: @t-white;
 
 // TabbarItem
-@tabbar-item-font-size: @font-size-sm;
-@tabbar-item-text-color: @gray-7;
-@tabbar-item-active-color: @blue;
-@tabbar-item-active-background-color: @tabbar-background-color;
-@tabbar-item-line-height: 1;
-@tabbar-item-icon-size: 22px;
-@tabbar-item-margin-bottom: 4px;
+@t-tabbar-item-font-size: @t-font-size-sm;
+@t-tabbar-item-text-color: @t-gray-7;
+@t-tabbar-item-active-color: @t-blue;
+@t-tabbar-item-active-background-color: @t-tabbar-background-color;
+@t-tabbar-item-line-height: 1;
+@t-tabbar-item-icon-size: 22px;
+@t-tabbar-item-margin-bottom: 4px;
 
 // Tab
-@tab-text-color: @gray-7;
-@tab-active-text-color: @text-color;
-@tab-disabled-text-color: @gray-5;
-@tab-font-size: @font-size-md;
-@tab-line-height: @line-height-md;
+@t-tab-text-color: @t-gray-7;
+@t-tab-active-text-color: @t-text-color;
+@t-tab-disabled-text-color: @t-gray-5;
+@t-tab-font-size: @t-font-size-md;
+@t-tab-line-height: @t-line-height-md;
 
 // Tabs
-@tabs-default-color: @red;
-@tabs-line-height: 44px;
-@tabs-card-height: 30px;
-@tabs-nav-background-color: @white;
-@tabs-bottom-bar-width: 40px;
-@tabs-bottom-bar-height: 3px;
-@tabs-bottom-bar-color: @tabs-default-color;
+@t-tabs-default-color: @t-red;
+@t-tabs-line-height: 44px;
+@t-tabs-card-height: 30px;
+@t-tabs-nav-background-color: @t-white;
+@t-tabs-bottom-bar-width: 40px;
+@t-tabs-bottom-bar-height: 3px;
+@t-tabs-bottom-bar-color: @t-tabs-default-color;
 
 // Tag
-@tag-padding: 0 @padding-base;
-@tag-text-color: @white;
-@tag-font-size: @font-size-sm;
-@tag-border-radius: 2px;
-@tag-line-height: 16px;
-@tag-medium-padding: 2px 6px;
-@tag-large-padding: @padding-base @padding-xs;
-@tag-large-border-radius: @border-radius-md;
-@tag-large-font-size: @font-size-md;
-@tag-round-border-radius: @border-radius-max;
-@tag-danger-color: @red;
-@tag-primary-color: @blue;
-@tag-success-color: @green;
-@tag-warning-color: @orange;
-@tag-default-color: @gray-6;
-@tag-plain-background-color: @white;
+@t-tag-padding: 0 @t-padding-base;
+@t-tag-text-color: @t-white;
+@t-tag-font-size: @t-font-size-sm;
+@t-tag-border-radius: 2px;
+@t-tag-line-height: 16px;
+@t-tag-medium-padding: 2px 6px;
+@t-tag-large-padding: @t-padding-base @t-padding-xs;
+@t-tag-large-border-radius: @t-border-radius-md;
+@t-tag-large-font-size: @t-font-size-md;
+@t-tag-round-border-radius: @t-border-radius-max;
+@t-tag-danger-color: @t-red;
+@t-tag-primary-color: @t-blue;
+@t-tag-success-color: @t-green;
+@t-tag-warning-color: @t-orange;
+@t-tag-default-color: @t-gray-6;
+@t-tag-plain-background-color: @t-white;
 
 // Toast
-@toast-max-width: 70%;
-@toast-font-size: @font-size-md;
-@toast-text-color: @white;
-@toast-loading-icon-color: @white;
-@toast-line-height: @line-height-md;
-@toast-border-radius: @border-radius-lg;
-@toast-background-color: fade(@black, 70%);
-@toast-icon-size: 36px;
-@toast-text-min-width: 96px;
-@toast-text-padding: @padding-xs @padding-sm;
-@toast-default-padding: @padding-md;
-@toast-default-width: 88px;
-@toast-default-min-height: 88px;
-@toast-position-top-distance: 20%;
-@toast-position-bottom-distance: 20%;
+@t-toast-max-width: 70%;
+@t-toast-font-size: @t-font-size-md;
+@t-toast-text-color: @t-white;
+@t-toast-loading-icon-color: @t-white;
+@t-toast-line-height: @t-line-height-md;
+@t-toast-border-radius: @t-border-radius-lg;
+@t-toast-background-color: fade(@t-black, 70%);
+@t-toast-icon-size: 36px;
+@t-toast-text-min-width: 96px;
+@t-toast-text-padding: @t-padding-xs @t-padding-sm;
+@t-toast-default-padding: @t-padding-md;
+@t-toast-default-width: 88px;
+@t-toast-default-min-height: 88px;
+@t-toast-position-top-distance: 20%;
+@t-toast-position-bottom-distance: 20%;
 
 // TreeSelect
-@tree-select-font-size: @font-size-md;
-@tree-select-nav-background-color: @background-color;
-@tree-select-content-background-color: @white;
-@tree-select-nav-item-padding: 14px @padding-sm;
-@tree-select-item-height: 48px;
-@tree-select-item-active-color: @red;
-@tree-select-item-disabled-color: @gray-5;
-@tree-select-item-selected-size: 16px;
+@t-tree-select-font-size: @t-font-size-md;
+@t-tree-select-nav-background-color: @t-background-color;
+@t-tree-select-content-background-color: @t-white;
+@t-tree-select-nav-item-padding: 14px @t-padding-sm;
+@t-tree-select-item-height: 48px;
+@t-tree-select-item-active-color: @t-red;
+@t-tree-select-item-disabled-color: @t-gray-5;
+@t-tree-select-item-selected-size: 16px;
 
 // Uploader
-@uploader-size: 80px;
-@uploader-icon-size: 24px;
-@uploader-icon-color: @gray-4;
-@uploader-text-color: @gray-6;
-@uploader-text-font-size: @font-size-sm;
-@uploader-upload-background-color: @gray-1;
-@uploader-upload-active-color: @active-color;
-@uploader-delete-color: @white;
-@uploader-delete-icon-size: 14px;
-@uploader-delete-background-color: rgba(0, 0, 0, 0.7);
-@uploader-file-background-color: @background-color;
-@uploader-file-icon-size: 20px;
-@uploader-file-icon-color: @gray-7;
-@uploader-file-name-padding: 0 @padding-base;
-@uploader-file-name-margin-top: @padding-xs;
-@uploader-file-name-font-size: @font-size-sm;
-@uploader-file-name-text-color: @gray-7;
-@uploader-mask-background-color: fade(@gray-8, 88%);
-@uploader-mask-icon-size: 22px;
-@uploader-mask-message-font-size: @font-size-sm;
-@uploader-mask-message-line-height: @line-height-xs;
-@uploader-loading-icon-size: 22px;
-@uploader-loading-icon-color: @white;
-@uploader-disabled-opacity: @disabled-opacity;
+@t-uploader-size: 80px;
+@t-uploader-icon-size: 24px;
+@t-uploader-icon-color: @t-gray-4;
+@t-uploader-text-color: @t-gray-6;
+@t-uploader-text-font-size: @t-font-size-sm;
+@t-uploader-upload-background-color: @t-gray-1;
+@t-uploader-upload-active-color: @t-active-color;
+@t-uploader-delete-color: @t-white;
+@t-uploader-delete-icon-size: 14px;
+@t-uploader-delete-background-color: rgba(0, 0, 0, 0.7);
+@t-uploader-file-background-color: @t-background-color;
+@t-uploader-file-icon-size: 20px;
+@t-uploader-file-icon-color: @t-gray-7;
+@t-uploader-file-name-padding: 0 @t-padding-base;
+@t-uploader-file-name-margin-top: @t-padding-xs;
+@t-uploader-file-name-font-size: @t-font-size-sm;
+@t-uploader-file-name-text-color: @t-gray-7;
+@t-uploader-mask-background-color: fade(@t-gray-8, 88%);
+@t-uploader-mask-icon-size: 22px;
+@t-uploader-mask-message-font-size: @t-font-size-sm;
+@t-uploader-mask-message-line-height: @t-line-height-xs;
+@t-uploader-loading-icon-size: 22px;
+@t-uploader-loading-icon-color: @t-white;
+@t-uploader-disabled-opacity: @t-disabled-opacity;
 
 // Sku
-@sku-item-background-color: @background-color;
-@sku-icon-gray-color: @gray-4;
-@sku-upload-mask-color: rgba(50, 50, 51, 0.8);
+@t-sku-item-background-color: @t-background-color;
+@t-sku-icon-gray-color: @t-gray-4;
+@t-sku-upload-mask-color: rgba(50, 50, 51, 0.8);

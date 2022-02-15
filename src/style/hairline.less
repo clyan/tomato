@@ -1,6 +1,5 @@
 @import './var';
 @import './mixins/hairline';
-
 [class*='tomato-hairline'] {
   &::after {
     .hairline();
@@ -19,29 +18,29 @@
   }
 
   &--top::after {
-    border-top-width: @border-width-base;
+    border-top-width: @t-border-width-base;
   }
 
   &--left::after {
-    border-left-width: @border-width-base;
+    border-left-width: @t-border-width-base;
   }
 
   &--right::after {
-    border-right-width: @border-width-base;
+    border-right-width: @t-border-width-base;
   }
 
   &--bottom::after {
-    border-bottom-width: @border-width-base;
+    border-bottom-width: @t-border-width-base;
   }
 
   &,
   &-unset {
     &--top-bottom::after {
-      border-width: @border-width-base 0;
+      border-width: @t-border-width-base 0;
     }
   }
 
   &--surround::after {
-    border-width: @border-width-base;
+    border-width: @t-border-width-base;
   }
 }

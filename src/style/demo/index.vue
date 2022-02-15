@@ -1,26 +1,42 @@
 <template>
-    <demo-section>
-        <demo-block :title="t('ellipsis')">
-            <div class="tomato-ellipsis">{{ t('text1') }}</div>
-            <div class="tomato-multi-ellipsis--l2">{{ t('text2') }}</div>
-        </demo-block>
+  <demo-section>
+    <demo-block :title="t('ellipsis')">
+      <div class="tomato-ellipsis">{{ t('text1') }}</div>
+      <div class="tomato-multi-ellipsis--l2">{{ t('text2') }}</div>
+    </demo-block>
 
-        <demo-block card :title="t('hairline')">
-            <div class="tomato-hairline--top" />
-        </demo-block>
+    <demo-block card :title="t('hairline')">
+      <div class="tomato-hairline--top" />
+    </demo-block>
 
-        <demo-block card :title="t('animation')">
-            <tomato-cell is-link title="Fade" @click="animate('tomato-fade')" />
-            <tomato-cell is-link title="Slide Up" @click="animate('tomato-slide-up')" />
-            <tomato-cell is-link title="Slide Down" @click="animate('tomato-slide-down')" />
-            <tomato-cell is-link title="Slide Left" @click="animate('tomato-slide-left')" />
-            <tomato-cell is-link title="Slide Right" @click="animate('tomato-slide-right')" />
-        </demo-block>
+    <demo-block card :title="t('animation')">
+      <tomato-cell is-link title="Fade" @click="animate('tomato-fade')" />
+      <tomato-cell
+        is-link
+        title="Slide Up"
+        @click="animate('tomato-slide-up')"
+      />
+      <tomato-cell
+        is-link
+        title="Slide Down"
+        @click="animate('tomato-slide-down')"
+      />
+      <tomato-cell
+        is-link
+        title="Slide Left"
+        @click="animate('tomato-slide-left')"
+      />
+      <tomato-cell
+        is-link
+        title="Slide Right"
+        @click="animate('tomato-slide-right')"
+      />
+    </demo-block>
 
-        <transition :name="transitionName">
-            <div v-show="show" class="demo-animate-block" />
-        </transition>
-    </demo-section>
+    <transition :name="transitionName">
+      <div v-show="show" class="demo-animate-block" />
+    </transition>
+  </demo-section>
 </template>
 
 <script>
@@ -68,39 +84,39 @@ export default {
 </script>
 
 <style lang="less">
-@import "../../style/var";
+@import '../../style/var';
 
 .demo-style {
-    .tomato-ellipsis,
-    .tomato-multi-ellipsis--l2 {
-        max-width: 300px;
-        margin-left: @padding-md;
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .tomato-ellipsis,
+  .tomato-multi-ellipsis--l2 {
+    max-width: 300px;
+    margin-left: @t-padding-md;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .tomato-ellipsis {
-        margin-bottom: @padding-md;
-    }
+  .tomato-ellipsis {
+    margin-bottom: @t-padding-md;
+  }
 
-    .tomato-hairline--top {
-        height: 30px;
-        background-color: @white;
+  .tomato-hairline--top {
+    height: 30px;
+    background-color: @t-white;
 
-        &::after {
-            top: 5px;
-        }
+    &::after {
+      top: 5px;
     }
+  }
 
-    .demo-animate-block {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        margin: -50px 0 0 -50px;
-        background-color: @blue;
-        border-radius: 8px;
-    }
+  .demo-animate-block {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background-color: @t-blue;
+    border-radius: 8px;
+  }
 }
 </style>
